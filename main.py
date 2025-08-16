@@ -107,7 +107,7 @@ def run_web_activity() -> None:
 
 def main() -> Tuple[int, str]:
     """主执行函数"""
-    check_github_actions()
+    # check_github_actions()
 
     success, msg = initialize_config()
     if not success:
