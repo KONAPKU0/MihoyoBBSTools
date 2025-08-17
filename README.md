@@ -14,7 +14,7 @@
 
 - **Github Actions**
 
-  1. 根据需求修改 `config/config.yaml.example` 文件，不必填写 `cookie` 和 `stoken`
+  1. 根据需求修改 `config/config.yaml.default` 文件，不必填写 `cookie` 和 `stoken`
 
   2. **使用[获取 Cookie](#获取米游社-cookie)里面的方法来获取米游社 Cookie**
 
@@ -27,10 +27,13 @@
         {
           "name": "档案名",
           "cookie": "刚刚获取的 Cookie",
-          "stoken": "刚刚获取的 Stoken"
+          "stoken": "刚刚获取的 Stoken",
+          "config": { // 可选，覆盖默认配置
+            // 结构与 config.yaml 一致
+          }
         },
         {
-          ...
+          // 其他用户...
         }
       ]
       ```
