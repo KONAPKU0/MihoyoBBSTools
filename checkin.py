@@ -3,7 +3,11 @@ import json
 import yaml
 
 if __name__ == '__main__':
-    profiles = json.loads(os.getenv('profiles'))
+    if os.getenv('GITHUB_ACTIONS') == 'true':
+        profiles = json.loads(os.getenv('profiles'))
+    else:
+        with open('config/profiles.json', 'r', encoding='utf-8') as f:
+            profiles = json.load(f)
 
     with open('config/config.yaml.example', 'r', encoding='utf-8') as f:
         config_example = yaml.load(f, Loader=yaml.FullLoader)
