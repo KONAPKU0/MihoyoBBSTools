@@ -24,8 +24,9 @@ mihoyobbs:
   checkin: true
   #签到的社区列表 详情可以看config文件夹下面的readme
   checkin_list:
-    - 2
+    - 1
     - 6
+    - 8
   #看帖
   read: true
   #点赞帖子
@@ -47,7 +48,7 @@ games:
     #原神
     genshin:
       #控制是否启用签到，下面一致
-      checkin: true
+      checkin: false
       #这里是不签到的账号，填入文本型数据 示例["114514","1919810"](也许你这边是和checkin_list那块一样)，下面一致
       black_list: []
     #崩坏2
@@ -56,7 +57,7 @@ games:
       black_list: []
     #崩坏3
     honkai3rd:
-      checkin: false
+      checkin: true
       black_list: []
     #未定事件簿
     tears_of_themis:
