@@ -58,7 +58,7 @@ games:
     #崩坏3
     honkai3rd:
       checkin: true
-      black_list: []
+      black_list: ["玩家201028383","玩家53975173"]
     #未定事件簿
     tears_of_themis:
       checkin: false
